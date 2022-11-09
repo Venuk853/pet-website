@@ -30,5 +30,64 @@
     <h1>Gallery</h1>
     <br>
     <br>
+
+    <div class="row">
+      <div class="column">
+        <img src="images/oli.png" alt="" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="images/goldretver.png" alt="" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="images/Bailey.png" alt="" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="images/loki.png" alt="" style="width:100%" onclick="myFunction(this);">
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="images/ghost.png" alt="" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="images/grumpy.png" alt="" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="images/longhaired.png" alt="" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="images/mimi.png" alt="" style="width:100%" onclick="myFunction(this);">
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="images/olimuf.png" alt="" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="images/smallgr.png" alt="" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="images/Snowball.png" alt="" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="images/tina.png" alt="" style="width:100%" onclick="myFunction(this);">
+      </div>
+    </div>
+    
+    <div class="container">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <img id="expandedImg" >
+      <div id="imgtext"></div>
+    </div>
+    
+    <script>
+    function myFunction(imgs) {
+      var expandImg = document.getElementById("expandedImg");
+      var imgText = document.getElementById("imgtext");
+      expandImg.src = imgs.src;
+      imgText.innerHTML = imgs.alt;
+      expandImg.parentElement.style.display = "block";
+    }
+    </script>
   </body>
 </html>
